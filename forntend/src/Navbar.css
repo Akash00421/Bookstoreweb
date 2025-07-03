@@ -1,0 +1,127 @@
+/* Navbar container */
+.navbar {
+  background-color: rgb(96, 168, 96);
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+}
+
+/* Logo */
+.navbar-logo {
+  width: 100px;
+  height: 90px;
+  object-fit: contain;
+}
+
+/* Navigation links */
+.navbar-links {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-links a {
+  color: #374151;
+  text-decoration: none;
+  font-size: large;
+  padding: 5px 10px;
+}
+
+.navbar-links a:hover {
+  color: rgba(82, 178, 82, 0.858);
+}
+
+/* Search + user section */
+.navbar-search-signup {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+/* Search bar */
+.navbar-search-signup input {
+  padding: 6px 12px;
+  border: 1.5px solid gray;
+  border-radius: 4px;
+}
+
+/* Sign Up button */
+.signup-btn {
+  background-color: #007185;
+  padding: 8px 12px;
+  border-radius: 6px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.signup-btn:hover {
+  background-color: #004e63;
+}
+
+/* Cart badge */
+.cart-badge {
+  background-color: red;
+  color: white;
+  font-size: 12px;
+  padding: 3px 7px;
+  border-radius: 50%;
+  margin-left: 4px;
+}
+
+/* Avatar + name container */
+.user-info-dropdown {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Badge + name inline */
+.user-display {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+/* Round user badge */
+.user-badge {
+  background-color: #333;
+  color: white;
+  font-weight: bold;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Username beside badge */
+.user-name {
+  font-weight: 600;
+  color: #fff;
+}
+
+/* Dropdown menu (Logout) */
+.dropdown-menu {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  background: rgba(196, 95, 95, 0.959);
+  border: 1px solid #cccccc;
+  padding: 8px 12px;
+  z-index: 1000;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.dropdown-menu button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  color: #fff;
+}

@@ -1,0 +1,16 @@
+.categories-container {
+  display: flex;
+  padding: 30px;
+  gap: 20px;
+}
+
+.filter-sidebar {
+  flex: 1;
+  max-width: 250px;
+  border-right: 2px solid #ddd;
+  padding-right: 10px;
+}
+
+.book-listing {
+  flex: 3;
+}

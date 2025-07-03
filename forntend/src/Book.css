@@ -1,0 +1,102 @@
+.book-card-modern {
+  width: 250px;
+  background: white;
+  border: 1px solid #eee;
+  border-radius: 6px;
+  overflow: hidden;
+  font-family: 'Segoe UI', sans-serif;
+  
+  transition: transform 0.3s ease;
+}
+
+.book-card-modern:hover {
+  transform: translateY(-5px);
+}
+
+.book-img-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.book-img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  display: block;
+}
+
+.discount-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #e84118;
+  color: white;
+  padding: 5px 8px;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 3px;
+}
+
+.hover-icons {
+  position: absolute;
+  top: 30%;
+  right: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.hover-icons button {
+  background: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  cursor: pointer;
+  font-size: 16px;
+  color: #e84118;
+}
+
+.book-img-container:hover .hover-icons {
+  opacity: 1;
+}
+
+.book-info {
+  padding: 15px;
+  text-align: center;
+}
+
+.book-author {
+  font-size: 14px;
+  color: #888;
+  margin: 5px 0;
+}
+
+.book-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 5px 0;
+}
+
+.book-price {
+  font-size: 20px;
+  margin: 8px 0;
+}
+
+.current-price {
+  color: #d63031;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.old-price {
+  color: #999;
+  text-decoration: line-through;
+  font-size: 14px;
+}
