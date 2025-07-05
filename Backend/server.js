@@ -4,7 +4,7 @@ import mongoose from "mongoose";
 import dotenv from "dotenv";
 
 // Import routes
-import authRoutes from "./routes/auth.js";
+import authRoutes from "./Routes/auth.js";
 import orderRoutes from "./Routes/order.js";
 
 // Create app
