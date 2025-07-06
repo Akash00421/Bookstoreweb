@@ -3,7 +3,7 @@ import User from "../models/user.js";
 
 const router = express.Router();
 
-// ✅ Register route
+//  Register route
 router.post("/register", async (req, res) => {
   const { name, username, email, password, mobile, age, address } = req.body;
 
@@ -34,7 +34,7 @@ router.post("/register", async (req, res) => {
   }
 });
 
-// ✅ Login route
+// Login route
 router.post("/login", async (req, res) => {
   const { username, password } = req.body;
 
@@ -58,7 +58,7 @@ router.post("/login", async (req, res) => {
   }
 });
 
-// ✅ Update profile route
+//  Update profile route
 router.put("/update", async (req, res) => {
   const { _id, name, username, email, mobile, age, address } = req.body;
 
