@@ -94,7 +94,9 @@ function BookDetails({ onToggleWishlist ,user}) {
        }
 
   try {
-    const response = await fetch("http://localhost:5000/api/order/place", {
+    const response = await fetch(
+                  "https://bookstoreweb-wwfq.onrender.com/api/order/place",
+      {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -104,7 +106,7 @@ function BookDetails({ onToggleWishlist ,user}) {
         product: {
           name: book.title,
           price: book.price,
-          image: `http://localhost:5173${book.image}`,
+          image: `https://bookstoreweb-five.vercel.app${book.image}`,
           quantity: quantity,
         },
       }),
