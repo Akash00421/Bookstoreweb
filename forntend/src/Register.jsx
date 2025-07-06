@@ -23,7 +23,7 @@ function Register({ setUser }) {
     e.preventDefault();
 
     try {
-      const response = await fetch("https://bookstoreweb-wwfq.onrender.com/api/auth/login", {
+      const response = await fetch("https://bookstoreweb-wwfq.onrender.com/api/auth/register", {
 
       
         method: "POST",
