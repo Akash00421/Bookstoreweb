@@ -15,7 +15,11 @@ const app = express();
 // Middleware
 
 app.use(cors({
-  origin: ["https://bookstoreweb-five.vercel.app"], 
+  origin: [
+    "http://localhost:3000",
+    "https://bookstoreweb-five.vercel.app",
+    "https://bookstoreweb-43kxysloy-akash-ss-projects-e75bc09b.vercel.app" // <- current Vercel preview build
+  ],
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true
 }));
