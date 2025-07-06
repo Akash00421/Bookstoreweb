@@ -17,8 +17,9 @@ const app = express();
 app.use(cors({
   origin: [
     "http://localhost:3000",
-    "https://bookstoreweb-five.vercel.app",
-    "https://bookstoreweb-43kxysloy-akash-ss-projects-e75bc09b.vercel.app" // <- current Vercel preview build
+    "https://bookstoreweb-five.vercel.app", // production
+    "https://bookstoreweb-git-main-akash-ss-projects-e75bc09b.vercel.app", // preview
+    "https://bookstoreweb-akash00421.vercel.app" // (optional) your GitHub username subdomain
   ],
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true
